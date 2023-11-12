@@ -1,4 +1,5 @@
-/* eslint-disable react/jsx-key */
+import Link from "next/Link";
+import { useRouter } from "next/router";
 // icons
 import {
   HiHome,
@@ -27,8 +28,6 @@ export const navData = [
   },
 ];
 
-import Link from "next/Link";
-import { useRouter } from "next/router";
 
 const Nav = () => {
   const router = useRouter();
