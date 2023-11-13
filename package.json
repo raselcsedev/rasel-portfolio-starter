@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build": "CI= npm run build"
   },
   "dependencies": {
     "@next/font": "^13.4.4",
