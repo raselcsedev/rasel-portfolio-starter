@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/jsx-key */
 import React, { useState } from "react";
 import Avatar from "../../components/Avatar";
@@ -30,68 +31,89 @@ const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
-        icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
-        ],
+        exp: "Expertise: ",
+        com: "Comfortable: ",
+        tol: "Tools: ",
+        expertise:
+          "Next.js, React.js, JavaScript, ES6, HTML, CSS, SASS, Tailwind, and Bootstrap.",
+        comfortable: "Typescript, Node.js, Express.js, MongoDB.",
+        tools:
+          "Git, NPM, VS Code, Jira, Chrome Dev Tool, Vercel, Heroku, Netlify.",
+        // title: "Web Design and Development.",
+        // icons: [
+        //   <FaHtml5 />,
+        //   <FaCss3 />,
+        //   <FaJs />,
+        //   <FaReact />,
+        //   <FaFigma />,
+        //   // <SiNextdotjs />,
+        //   // <SiFramer />,
+        //   // <FaWordpress />,
+        // ],
       },
-      {
-        title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-      },
+      // {
+      //   title: "Web Design",
+      //   icons: [
+      //   <FaFigma />,
+      //   // <SiAdobexd />,
+      //   // <SiAdobephotoshop />
+      // ],
+      // },
     ],
   },
-  {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
-      },
-    ],
-  },
+  // {
+  //   title: "awards",
+  //   info: [
+  //     {
+  //       title: "Webby Awards - Honoree",
+  //       stage: "2011 - 2012",
+  //     },
+  //     {
+  //       title: "Adobe Design Achievement Awards - Finalist",
+  //       stage: "2009 - 2010",
+  //     },
+  //   ],
+  // },
   {
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        organisation: "Organisation: ",
+        date: "Stage: ",
+        title: "Javascript Developer @Gain Solutions Ltd.",
+        stage: "1st September, 2022 - 30th October, 2023",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        organisation: "Organisation: ",
+        date: "Stage: ",
+        title: "Frontend Developer @Digital Intelligence System Ltd.",
+        stage: "1st November, 2023 - Continue",
       },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-      },
+      // {
+      //   title: "Web Developer - ABC Agency",
+      //   stage: "2010 - 2012",
+      // },
+      // {
+      //   title: "Intern - DEF Corporation",
+      //   stage: "2008 - 2010",
+      // },
     ],
   },
   {
-    title: "credentials",
+    title: "education",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "B.Sc. in CSE - University of South Asia",
+        stage: "2021",
       },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
-      },
+      // {
+      //   title: "Computer Science Diploma - AV Technical Institute",
+      //   stage: "2009",
+      // },
+      // {
+      //   title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
+      //   stage: "2006",
+      // },
     ],
   },
 ];
@@ -120,8 +142,7 @@ const About = () => {
             className="h2"
           >
             {" "}
-            Captvating <span className="text-accent">stories</span> birth
-            magdsfsdf des dfdfsadf
+            WHO AM <span className="text-accent">I</span>
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -130,8 +151,17 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 "
           >
-            10sfgasdhfikjmnadsuifjhadsjkfmnskdfmkladsfjdnf.lkasdf
-            iuhdfsadkjfhasldj.nadfjlkjadjflkasdfj
+            Hello! As a Front-End Web Developer driven by the pursuit of
+            excellence, I'm dedicated to developing seamless user experiences
+            through innovative and robust code. I thrive in collaborative
+            environments, embracing challenges to create elegant solutions and
+            elevate the digital landscape.
+            <br />
+            {/* JavaScript, TypeScript, and ES6 for powerful and dynamic web applications. <br />
+            React.js and Next.js for crafting efficient and scalable front-end experiences. <br />
+            Proficiency in React Hooks for state management and functional components. <br />
+            Extensive knowledge in HTML, CSS, SASS, Tailwind, and Bootstrap for
+            crafting responsive and visually appealing interfaces. */}
           </motion.p>
 
           <motion.div
@@ -144,20 +174,20 @@ const About = () => {
             <div className="flex flex-1 xl:gap-x-6">
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} /> +
+                  <CountUp start={0} end={1} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px] ">
                   Years of experience
                 </div>
               </div>
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
+              {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={250} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px] ">
                   Satisfied clients
                 </div>
-              </div>
+              </div> */}
             </div>
           </motion.div>
         </div>
@@ -191,16 +221,38 @@ const About = () => {
                   key={itemIndex}
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
                 >
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
-                  <div>{item.stage}</div>
-                  <div className="flex gap-x-4">
+                  <div className="font-light mb-2 md:mb-0 col-6">
+                    {item.title && (
+                      <span>
+                        <span className="text-lg text-white">
+                          {item.organisation}
+                        </span>
+                        {item.title} <br />
+                        <span className="text-lg text-white">{item.date} </span>
+                        {item.stage}
+                      </span>
+                    )}
+
+                    {item.expertise && (
+                      <span>
+                        <span className="text-lg text-white">{item.exp} </span>
+                        {item.expertise} <br />
+                        <span className="text-lg text-white">{item.com} </span>
+                        {item.comfortable} <br />
+                        <span className="text-lg text-white">{item.tol} </span>
+                        {item.tools}
+                      </span>
+                    )}
+                  </div>
+                  {/* <div className="hidden md:flex">-</div>
+                  <div className="col-6">{item.stage}</div> */}
+                  {/* <div className="flex gap-x-4">
                     {item?.icons?.map((icon, itemIndex) => {
                       return (
                         <div className="text-2xl text-white"> {icon} </div>
                       );
                     })}
-                  </div>
+                  </div> */}
                 </div>
               );
             })}
