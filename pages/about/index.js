@@ -78,14 +78,14 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        organisation: "Organisation: ",
-        date: "Stage: ",
+        organisation: "",
+        date: "",
         title: "Javascript Developer @Gain Solutions Ltd.",
         stage: "1st September, 2022 - 30th October, 2023",
       },
       {
-        organisation: "Organisation: ",
-        date: "Stage: ",
+        organisation: "",
+        date: "",
         title: "Frontend Developer @Digital Intelligence System Ltd.",
         stage: "1st November, 2023 - Continue",
       },
@@ -103,8 +103,9 @@ const aboutData = [
     title: "education",
     info: [
       {
-        title: "B.Sc. in CSE - University of South Asia",
-        stage: "2021",
+        title: "Degree: B.Sc. in CSE (2017 - 2021)",
+        stage: "University: University of South Asia",
+        gpa: "CGPA: 3.90"
       },
       // {
       //   title: "Computer Science Diploma - AV Technical Institute",
@@ -225,22 +226,23 @@ const About = () => {
                     {item.title && (
                       <span>
                         <span className="text-lg text-white">
-                          {item.organisation}
-                        </span>
+                          
                         {item.title} <br />
-                        <span className="text-lg text-white">{item.date} </span>
-                        {item.stage}
+                        </span>
+                        <span className="text-lg text-white">{item.stage}</span> <br />
+                        <span className="text-lg text-white">{item.gpa}</span>
+                        
                       </span>
                     )}
 
                     {item.expertise && (
                       <span>
-                        <span className="text-lg text-white">{item.exp} </span>
-                        {item.expertise} <br />
-                        <span className="text-lg text-white">{item.com} </span>
-                        {item.comfortable} <br />
-                        <span className="text-lg text-white">{item.tol} </span>
-                        {item.tools}
+                        <span className="text-lg text-white">{item.exp} {item.expertise} <br /> </span>
+                       
+                        <span className="text-lg text-white">{item.com} {item.comfortable} <br /> </span>
+                        
+                        <span className="text-lg text-white">{item.tol}  {item.tools} </span>
+                       
                       </span>
                     )}
                   </div>
