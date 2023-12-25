@@ -46,16 +46,16 @@ const Services = () => {
     <div className="h-full bg-primary/30 py-36 flex items-center">
       <Circles />
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row gap-x-8">
-          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0 ">
+        <div className="flex items-center flex-col xl:flex-row gap-x-8">
+          <div className="flex xl:w-[50vw] flex-col text-left mb-4 xl:mb-0 ">
             <motion.h2
               variants={fadeIn("up", 0.3)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-8"
+              className="xl:text-3xl sm:text-xl"
             >
-              My Services <span className="text-accent">.</span>
+              My Services <span className="text-accent ">.</span>
             </motion.h2>
 
             <motion.p
@@ -63,29 +63,29 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 mx-auto lg:mx-0 "
+              className="mb-4 mx-auto xl:text-lg sm:text-sm lg:mx-0"
             >
-              <span className="text-xl">
-                01. Responsive Web Design:
+              <span className="">
+              <span className="text-accent ">01.</span> Crafting visually stunning and responsive websites to ensure optimal viewing experiences across all devices.
               </span>{" "}
               <br />
-              <span className="text-xl">
-                02. React.js & Next.js Expertise:{" "}
+              <span className="">
+              <span className="text-accent ">02.</span> Utilizing the power of React.js and Next.js to build dynamic and scalable web applications.
               </span>
               <br />
-              <span className="text-xl">
-              03. Component-Based Architecture:
+              <span className="">
+              <span className="text-accent ">03.</span> Implementing modular and reusable components for streamlined development and maintenance.
               </span> <br />
-              <span className="text-xl ">
-                04. Performance Optimization:{" "}
+              <span className=" ">
+              <span className="text-accent ">04.</span> Optimizing website performance for speed and efficiency.
               </span>
               <br />
-              <span className="text-xl ">
-                05. Cross-Browser Compatibility:{" "}
+              <span className=" ">
+              <span className="text-accent ">05.</span> Ensuring seamless functionality and consistent appearance across various browsers for a broader audience reach.
               </span>
               <br />
-              <span className="text-xl">
-                06. Collaborative Problem Solving:{" "}
+              <span className="">
+              <span className="text-accent ">06.</span> Thriving in collaborative environments to tackle challenges and deliver elegant solutions that elevate digital experiences.
               </span>
             </motion.p>
           </div>
@@ -94,7 +94,7 @@ const Services = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="w-full xl:max-w-[65%] "
+            className="w-full xl:max-w-[40%] "
           >
             <ServiceSlider />
           </motion.div>
