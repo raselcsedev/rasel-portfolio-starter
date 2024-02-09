@@ -23,8 +23,14 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-full bg-primary/30">
-      <div className=" container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full  ">
+    <div className="xl:h-full my-8 xl:my-0 bg-primary/30 xl:py-36 " style={{
+      overflowY: "auto", // Set overflow-y to auto by default
+      maxHeight: "none", // Ensure maxHeight is set to none to allow content to expand
+      "@media (min-width: 768px)": {
+        overflowY: "scroll", // Set overflow-y to scroll for mobile devices
+      },
+    }}>
+      <div className=" container mx-auto xl:py-32 text-center xl:text-left flex items-center justify-center h-full  ">
         <div className=" flex flex-col w-full max-w-[700px]">
           <motion.h2
             variants={fadeIn("up", 0.2)}

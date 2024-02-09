@@ -43,7 +43,16 @@ import { fadeIn } from "../../variants";
 
 const Services = () => {
   return (
-    <div className="h-full bg-primary/30 py-36 flex items-center">
+    <div
+      className="xl:h-full my-8 xl:my-0 bg-primary/30 xl:py-36 flex items-center"
+      style={{
+        overflowY: "auto", // Set overflow-y to auto by default
+        maxHeight: "none", // Ensure maxHeight is set to none to allow content to expand
+        "@media (min-width: 768px)": {
+          overflowY: "scroll", // Set overflow-y to scroll for mobile devices
+        },
+      }}
+    >
       <Circles />
       <div className="container mx-auto">
         <div className="flex items-center flex-col xl:flex-row gap-x-8">
@@ -66,26 +75,38 @@ const Services = () => {
               className="mb-4 mx-auto xl:text-lg sm:text-sm lg:mx-0"
             >
               <span className="">
-              <span className="text-accent ">01.</span> Crafting visually stunning and responsive websites to ensure optimal viewing experiences across all devices.
+                <span className="text-accent ">01.</span> Crafting visually
+                stunning and responsive websites to ensure optimal viewing
+                experiences across all devices.
               </span>{" "}
               <br />
               <span className="">
-              <span className="text-accent ">02.</span> Utilizing the power of React.js and Next.js to build dynamic and scalable web applications.
+                <span className="text-accent ">02.</span> Utilizing the power of
+                React.js and Next.js to build dynamic and scalable web
+                applications.
               </span>
               <br />
               <span className="">
-              <span className="text-accent ">03.</span> Implementing modular and reusable components for streamlined development and maintenance.
-              </span> <br />
+                <span className="text-accent ">03.</span> Implementing modular
+                and reusable components for streamlined development and
+                maintenance.
+              </span>{" "}
+              <br />
               <span className=" ">
-              <span className="text-accent ">04.</span> Optimizing website performance for speed and efficiency.
+                <span className="text-accent ">04.</span> Optimizing website
+                performance for speed and efficiency.
               </span>
               <br />
               <span className=" ">
-              <span className="text-accent ">05.</span> Ensuring seamless functionality and consistent appearance across various browsers for a broader audience reach.
+                <span className="text-accent ">05.</span> Ensuring seamless
+                functionality and consistent appearance across various browsers
+                for a broader audience reach.
               </span>
               <br />
               <span className="">
-              <span className="text-accent ">06.</span> Thriving in collaborative environments to tackle challenges and deliver elegant solutions that elevate digital experiences.
+                <span className="text-accent ">06.</span> Thriving in
+                collaborative environments to tackle challenges and deliver
+                elegant solutions that elevate digital experiences.
               </span>
             </motion.p>
           </div>
