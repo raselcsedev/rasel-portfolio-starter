@@ -23,11 +23,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="xl:h-full my-8 xl:my-0 bg-primary/30 xl:py-36 " style={{
-      overflowY: "auto", // Set overflow-y to auto by default
-      maxHeight: "none", // Ensure maxHeight is set to none to allow content to expand
+    <div className="xl:h-full pt-8 mb-8 xl:mb-0 bg-primary/30 xl:py-36 pb-48" style={{
+      overflowY: "auto", 
+      maxHeight: "none", 
       "@media (min-width: 768px)": {
-        overflowY: "scroll", // Set overflow-y to scroll for mobile devices
+        overflowY: "scroll", 
       },
     }}>
       <div className=" container mx-auto xl:py-32 text-center xl:text-left flex items-center justify-center h-full  ">

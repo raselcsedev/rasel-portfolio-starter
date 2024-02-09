@@ -122,7 +122,7 @@ const aboutData = [
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="h-full bg-primary/30 my-8 text-center xl:text-left"
+    <div className="h-full bg-primary/30 pt-8 xl:pt-0 mb-8 xl:mb-0 text-center xl:text-left"
     style={{
       overflowY: "auto", // Set overflow-y to auto by default
       maxHeight: "none", // Ensure maxHeight is set to none to allow content to expand

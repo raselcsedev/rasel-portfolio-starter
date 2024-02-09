@@ -60,7 +60,7 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={{ Pagination }}
-      className="h-[280px] sm:h-[480px]"
+      className=""
     >
       {workSlider?.slides?.map((slide, index) => {
         return (
@@ -92,7 +92,7 @@ const WorkSlider = () => {
                 );
               })}
             </div> */}
-            <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
+            <div className="grid xl:grid-cols-2 xl:grid-rows-2 gap-4 cursor-pointer">
               <div className="relative rounded-lg overflow-hidden flex items-center justify-center group ">
                 <div className=" flex items-center rounded-lg justify-center relative overflow-hidden group">
                   <Image src="/fitclub.jpg" width={500} height={300} alt="" />

@@ -13,10 +13,10 @@ function MyApp({ Component, pageProps }) {
       <AnimatePresence mode="wait">
         <motion.div key={router.route} className="h-full"
         style={{
-          overflowY: "auto", // Set overflow-y to auto by default
-          maxHeight: "none", // Ensure maxHeight is set to none to allow content to expand
+          overflowY: "auto", 
+          maxHeight: "none", 
           "@media (max-width: 767px)": {
-            overflowY: "scroll", // Set overflow-y to scroll for mobile devices
+            overflowY: "scroll",
           },
         }}>
           <Transition />

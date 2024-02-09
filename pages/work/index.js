@@ -8,7 +8,13 @@ import { fadeIn } from "../../variants";
 
 const Work = () => {
   return (
-    <div className="h-full bg-primary/30 py-36 flex items-center">
+    <div className="h-full bg-primary/30 xl:py-36  flex xl:items-center pt-4 xl:pt-0 mb-24 xl:mb-0"  style={{
+      overflowY: "auto", 
+      maxHeight: "none", 
+      "@media (min-width: 768px)": {
+        overflowY: "scroll", 
+      },
+    }}>
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row">
@@ -43,7 +49,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="text-3xl xl:ml-10  xl:mt-12"
+              className="text-3xl xl:ml-10 xl:mt-12 "
             >
               My Projects<span className="text-accent">.</span>
             </motion.h2>

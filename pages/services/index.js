@@ -44,7 +44,7 @@ import { fadeIn } from "../../variants";
 const Services = () => {
   return (
     <div
-      className="xl:h-full my-8 xl:my-0 bg-primary/30 xl:py-36 flex items-center"
+      className="xl:h-full pt-8 xl:pt-0 mb-8 xl:mb-0 bg-primary/30 xl:py-36 flex items-center"
       style={{
         overflowY: "auto", // Set overflow-y to auto by default
         maxHeight: "none", // Ensure maxHeight is set to none to allow content to expand

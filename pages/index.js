@@ -10,14 +10,14 @@ import { fadeIn } from "../variants";
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 xl:h-full my-8 xl:my-0"  style={{
-      overflowY: "auto", // Set overflow-y to auto by default
-      maxHeight: "none", // Ensure maxHeight is set to none to allow content to expand
+    <div className="bg-primary/60 h-full my-8 mb-24 xl:my-0"  style={{
+      overflowY: "auto", 
+      maxHeight: "none", 
       "@media (min-width: 768px)": {
-        overflowY: "scroll", // Set overflow-y to scroll for mobile devices
+        overflowY: "scroll", 
       },
     }}>
-      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
+      <div className="w-full xl:h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center  xl:text-left h-full container mx-auto">
           <motion.h2
             variants={fadeIn("down", 0.4)}
